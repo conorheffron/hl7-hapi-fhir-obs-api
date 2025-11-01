@@ -1,4 +1,6 @@
-# Simple-HL7v2
+# hl7-hapi-fhir-obs-api
+
+[![Java CI with Maven](https://github.com/conorheffron/hl7-hapi-fhir-obs-api/actions/workflows/maven.yml/badge.svg)](https://github.com/conorheffron/hl7-hapi-fhir-obs-api/actions/workflows/maven.yml)
 
 ### QUICK START: Build & Run API
 ```shell
