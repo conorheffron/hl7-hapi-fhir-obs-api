@@ -10,11 +10,13 @@ public final class HapiFhirClient {
 
     private static IGenericClient clientInstance;
 
+    private HapiFhirClient() { }
+
     // Create a FHIR context for R4
     @Getter
     private static final FhirContext fhirContext = FhirContext.forR4();
 
-    public static IGenericClient getInstance() {
+    public static synchronized IGenericClient getInstance() {
         if(clientInstance == null) {
             clientInstance = createClient();
         }
