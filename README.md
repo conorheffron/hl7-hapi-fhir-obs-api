@@ -68,6 +68,7 @@ curl -X GET -H 'Accept: application/json' 'http://localhost:8080/api/obese/obser
 } ]
 ```
 ### GET Observations by Code (`WHERE` Patients have BMI Observations Recorded)
+ - Note: Some Bad / Test data where patient ID/Reference is missing.
 ```shell
 curl -X GET -H 'Accept: application/json' 'http://localhost:8080/api/all/observation?code=39156-5'
 ```
