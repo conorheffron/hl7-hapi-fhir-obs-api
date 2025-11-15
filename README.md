@@ -13,7 +13,7 @@
 ```
 ##### Run API with JDK 25 (LTS)
 ```shell
-java -jar target/hl7-hapi-fhir-obs-api-1.0-SNAPSHOT.jar ie.rcsi.example.Application
+java -jar target/hl7-hapi-fhir-obs-api-1.1-SNAPSHOT.jar ie.rcsi.example.Application
 ```
 ##### Run Test Script for Automate Batch of UI calls
 ```shell
