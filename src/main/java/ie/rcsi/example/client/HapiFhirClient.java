@@ -12,7 +12,6 @@ public final class HapiFhirClient {
 
     private HapiFhirClient() { }
 
-    // Create a FHIR context for R4
     @Getter
     private static final FhirContext fhirContext = FhirContext.forR4B();
 
