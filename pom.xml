@@ -33,7 +33,7 @@
         </dependency>
         <dependency>
             <groupId>ca.uhn.hapi.fhir</groupId>
-            <artifactId>hapi-fhir-structures-r4</artifactId>
+            <artifactId>hapi-fhir-structures-r5</artifactId>
             <version>${hapi.fhir.vers}</version>
         </dependency>
         <dependency>
@@ -43,8 +43,8 @@
         </dependency>
         <dependency>
             <groupId>ca.uhn.hapi.fhir</groupId>
-            <artifactId>org.hl7.fhir.r4</artifactId>
-            <version>6.7.5</version>
+            <artifactId>org.hl7.fhir.r5</artifactId>
+            <version>6.7.7</version>
         </dependency>
         <!-- Spring -->
         <dependency>

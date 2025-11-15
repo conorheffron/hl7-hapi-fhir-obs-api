@@ -1,17 +1,9 @@
 [ {
-  "bmi" : 34.9,
-  "patientId" : "Patient/1201",
-  "observationId" : "102791"
+  "bmi" : 32.2,
+  "patientId" : "Patient/135637",
+  "observationId" : "135654"
 }, {
-  "bmi" : 36.2,
-  "patientId" : "Patient/1203",
-  "observationId" : "102803"
-}, {
-  "bmi" : 41.8,
-  "patientId" : "Patient/1316",
-  "observationId" : "102839"
-}, {
-  "bmi" : 34.7,
-  "patientId" : null,
-  "observationId" : "106394"
+  "bmi" : 32.2,
+  "patientId" : "Patient/264628",
+  "observationId" : "264629"
 } ]
