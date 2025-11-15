@@ -1,5 +1,7 @@
 # hl7-hapi-fhir-obs-api
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 [![Java CI with Maven](https://github.com/conorheffron/hl7-hapi-fhir-obs-api/actions/workflows/maven.yml/badge.svg)](https://github.com/conorheffron/hl7-hapi-fhir-obs-api/actions/workflows/maven.yml)
 
 ### QUICK START: Build & Run API
