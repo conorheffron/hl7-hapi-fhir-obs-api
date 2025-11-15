@@ -1,0 +1,14 @@
+{
+  "resourceType": "DiagnosticReport",
+  "id": "53132",
+  "meta": {
+    "versionId": "2",
+    "lastUpdated": "2025-09-03T17:32:03.858+00:00",
+    "source": "#9QftlQwdflbUz1st"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\"/><table class=\"hapiPropertyTable\"><tbody><tr><td>Status</td><td>FINAL</td></tr></tbody></table></div>"
+  },
+  "status": "final"
+}

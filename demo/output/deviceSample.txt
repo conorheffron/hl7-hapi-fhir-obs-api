@@ -1,0 +1,55 @@
+{
+  "resourceType": "Device",
+  "id": "581517",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2019-12-23T03:45:22.636+00:00",
+    "source": "#UGEagspPa7ifAtAX"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"> \n         <p>HL7 FHIR</p> \n         <p>Device Resource</p> \n      </div>"
+  },
+  "identifier": [ {
+    "use": "official",
+    "type": {
+      "coding": [ {
+        "system": "http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers",
+        "code": "SYSID"
+      } ]
+    },
+    "system": "urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680",
+    "value": "74-E8-FF-FE-FF-05-1C-00"
+  } ],
+  "status": "active",
+  "manufacturer": "company name",
+  "lotNumber": "lot number",
+  "modelNumber": "model number",
+  "type": {
+    "coding": [ {
+      "system": "urn:iso:std:iso:11073:10101",
+      "code": "65573",
+      "display": "MDC_MOC_VMS_MDS_SIMP"
+    } ],
+    "text": "MDC_MOC_VMS_MDS_SIMP: Continua Personal Health Device"
+  },
+  "specialization": [ {
+    "systemType": {
+      "coding": [ {
+        "system": "urn:iso:std:iso:11073:10101",
+        "code": "528391"
+      } ],
+      "text": "MDC_DEV_SPEC_PROFILE_BP"
+    },
+    "version": "1"
+  } ],
+  "patient": {
+    "reference": "urn:uuid:5f5027b6-3a46-41e5-8d99-a31673b9429b"
+  },
+  "location": {
+    "reference": "urn:uuid:6648f3ff-8a51-470a-863a-7605ee44abcd"
+  },
+  "note": [ {
+    "text": "note here...."
+  } ]
+}

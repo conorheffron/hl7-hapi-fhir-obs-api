@@ -1,0 +1,76 @@
+{
+  "resourceType": "NutritionOrder",
+  "id": "641287",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2025-08-25T22:54:49.613+00:00",
+    "source": "#0Mb6ZWpV0uEu2qtX"
+  },
+  "status": "active",
+  "intent": "order",
+  "patient": {
+    "reference": "Patient/639010"
+  },
+  "dateTime": "2019-09-17",
+  "orderer": {
+    "reference": "Practitioner/639009"
+  },
+  "oralDiet": {
+    "type": [ {
+      "coding": [ {
+        "system": "http://snomed.info/sct",
+        "code": "226211001",
+        "display": "Protein-rich foods"
+      }, {
+        "system": "http://goodhealthhospital.org/diet-type-codes",
+        "code": "1010",
+        "display": "Protein-rich foods"
+      } ],
+      "text": "Protein-rich foods"
+    } ],
+    "schedule": [ {
+      "repeat": {
+        "boundsPeriod": {
+          "start": "2020-02-10"
+        },
+        "frequency": 3,
+        "period": 1,
+        "periodUnit": "d"
+      }
+    } ],
+    "texture": [ {
+      "modifier": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "228055009",
+          "display": "Liquidized food"
+        } ],
+        "text": "Pureed"
+      }
+    } ],
+    "fluidConsistencyType": [ {
+      "coding": [ {
+        "system": "http://snomed.info/sct",
+        "code": "439021000124105",
+        "display": "Dietary liquid consistency - nectar thick liquid"
+      } ],
+      "text": "Nectar thick liquids"
+    } ]
+  },
+  "supplement": [ {
+    "type": {
+      "coding": [ {
+        "system": "http://snomed.info/sct",
+        "code": "442971000124100",
+        "display": "Adult high energy formula"
+      }, {
+        "system": "http://goodhealthhospital.org/supplement-type-codes",
+        "code": "1040",
+        "display": "Adult high energy pudding"
+      } ],
+      "text": "Adult high energy pudding"
+    },
+    "productName": "Ensure Pudding 4 oz container",
+    "instruction": "Ensure Pudding at breakfast, lunch, supper"
+  } ]
+}

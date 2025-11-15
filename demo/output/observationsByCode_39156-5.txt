@@ -1,0 +1,910 @@
+{
+  "resourceType": "Bundle",
+  "id": "daf4360b-2385-4fa5-b1b4-27ae68959de7",
+  "meta": {
+    "lastUpdated": "2025-11-15T05:53:30.933+00:00"
+  },
+  "type": "searchset",
+  "link": [ {
+    "relation": "self",
+    "url": "https://hapi.fhir.org/baseR4/Observation?code=39156-5"
+  }, {
+    "relation": "next",
+    "url": "https://hapi.fhir.org/baseR4?_getpages=daf4360b-2385-4fa5-b1b4-27ae68959de7&_getpagesoffset=20&_count=20&_pretty=true&_bundletype=searchset"
+  } ],
+  "entry": [ {
+    "fullUrl": "https://hapi.fhir.org/baseR4/Observation/49262",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "49262",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2019-10-18T20:20:56.872+00:00",
+        "source": "#ML8v9Ku1pGuXAhZr"
+      },
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body Mass Index"
+        } ],
+        "text": "Body Mass Index"
+      },
+      "subject": {
+        "reference": "Patient/49006"
+      },
+      "encounter": {
+        "reference": "Encounter/49258"
+      },
+      "effectiveDateTime": "2014-04-07T20:27:01-04:00",
+      "issued": "2014-04-07T20:27:01.958-04:00",
+      "valueQuantity": {
+        "value": 19.91,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    },
+    "search": {
+      "mode": "match"
+    }
+  }, {
+    "fullUrl": "https://hapi.fhir.org/baseR4/Observation/49278",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "49278",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2019-10-18T20:20:56.872+00:00",
+        "source": "#ML8v9Ku1pGuXAhZr"
+      },
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body Mass Index"
+        } ],
+        "text": "Body Mass Index"
+      },
+      "subject": {
+        "reference": "Patient/49006"
+      },
+      "encounter": {
+        "reference": "Encounter/49274"
+      },
+      "effectiveDateTime": "2015-04-13T20:27:01-04:00",
+      "issued": "2015-04-13T20:27:01.958-04:00",
+      "valueQuantity": {
+        "value": 20.49,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    },
+    "search": {
+      "mode": "match"
+    }
+  }, {
+    "fullUrl": "https://hapi.fhir.org/baseR4/Observation/53248",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "53248",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2019-11-01T18:21:32.312+00:00",
+        "source": "#jkcy2CmYvZIMfcnV"
+      },
+      "identifier": [ {
+        "value": "29bdf391-8a1d-4f8c-b961-92751fccc50c"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/ValueSet/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body Mass Index Calculated"
+        } ],
+        "text": "2.16.840.1.113883.4.642.3.396"
+      },
+      "subject": {
+        "reference": "Patient/53254",
+        "type": "Patient"
+      },
+      "effectiveDateTime": "2013-01-30",
+      "valueQuantity": {
+        "value": 28.0,
+        "unit": "1"
+      }
+    },
+    "search": {
+      "mode": "match"
+    }
+  }, {
+    "fullUrl": "https://hapi.fhir.org/baseR4/Observation/66247",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "66247",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2019-11-16T00:30:11.350+00:00",
+        "source": "#XbcXzUEeJ7cdQDrz"
+      },
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body Mass Index"
+        } ],
+        "text": "Body Mass Index"
+      },
+      "effectiveDateTime": "2011-12-22T04:38:35+00:00",
+      "issued": "2011-12-22T04:38:35.005+00:00",
+      "valueQuantity": {
+        "value": 28.88,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      },
+      "referenceRange": [ {
+        "low": {
+          "value": 10,
+          "comparator": "<"
+        }
+      } ]
+    },
+    "search": {
+      "mode": "match"
+    }
+  }, {
+    "fullUrl": "https://hapi.fhir.org/baseR4/Observation/66248",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "66248",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2019-11-16T00:30:32.864+00:00",
+        "source": "#FMJpzArLcCdfne5s"
+      },
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body Mass Index"
+        } ],
+        "text": "Body Mass Index"
+      },
+      "effectiveDateTime": "2011-12-22T04:38:35+00:00",
+      "issued": "2011-12-22T04:38:35.005+00:00",
+      "valueQuantity": {
+        "value": 28.88,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      },
+      "referenceRange": [ {
+        "low": {
+          "value": 10,
+          "comparator": "<"
+        }
+      } ]
+    },
+    "search": {
+      "mode": "match"
+    }
+  }, {
+    "fullUrl": "https://hapi.fhir.org/baseR4/Observation/66249",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "66249",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2019-11-16T00:31:50.788+00:00",
+        "source": "#PHf2oQjpSrh4Vp3D"
+      },
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body Mass Index"
+        } ],
+        "text": "Body Mass Index"
+      },
+      "effectiveDateTime": "2011-12-22T04:38:35+00:00",
+      "issued": "2011-12-22T04:38:35.005+00:00",
+      "valueQuantity": {
+        "value": 28.88,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      },
+      "referenceRange": [ {
+        "low": {
+          "value": 10,
+          "comparator": "<"
+        }
+      } ]
+    },
+    "search": {
+      "mode": "match"
+    }
+  }, {
+    "fullUrl": "https://hapi.fhir.org/baseR4/Observation/66250",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "66250",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2019-11-16T00:33:27.209+00:00",
+        "source": "#N310iltiJJ6mlPL6"
+      },
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body Mass Index"
+        } ],
+        "text": "Body Mass Index"
+      },
+      "effectiveDateTime": "2011-12-22T04:38:35+00:00",
+      "issued": "2011-12-22T04:38:35.005+00:00",
+      "valueQuantity": {
+        "value": 28.88,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      },
+      "referenceRange": [ {
+        "low": {
+          "value": 10
+        }
+      } ]
+    },
+    "search": {
+      "mode": "match"
+    }
+  }, {
+    "fullUrl": "https://hapi.fhir.org/baseR4/Observation/102786",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "102786",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2019-11-27T12:21:15.015+00:00",
+        "source": "#3wxHZCEtQRsMhA1Q"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "85353-1",
+          "display": "Vital signs, weight, height, head circumference, oxygen saturation and BMI panel"
+        }, {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body mass index (BMI) [Ratio]"
+        } ],
+        "text": "BMI"
+      },
+      "subject": {
+        "reference": "Patient/1200"
+      },
+      "performer": [ {
+        "reference": "Organization/358",
+        "display": "PHARMACIE DU GINKGO"
+      } ],
+      "valueQuantity": {
+        "value": 16.2,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      },
+      "referenceRange": [ {
+        "high": {
+          "value": 3.0,
+          "unit": "mmol/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        }
+      } ]
+    },
+    "search": {
+      "mode": "match"
+    }
+  }, {
+    "fullUrl": "https://hapi.fhir.org/baseR4/Observation/102791",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "102791",
+      "meta": {
+        "versionId": "3",
+        "lastUpdated": "2019-11-27T13:24:50.813+00:00",
+        "source": "#RZLbQ1vYnatuJGNE"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "85353-1",
+          "display": "Vital signs, weight, height, head circumference, oxygen saturation and BMI panel"
+        }, {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body mass index (BMI) [Ratio]"
+        } ],
+        "text": "BMI"
+      },
+      "subject": {
+        "reference": "Patient/1201"
+      },
+      "performer": [ {
+        "reference": "Organization/358",
+        "display": "PHARMACIE DU GINKGO"
+      } ],
+      "valueQuantity": {
+        "value": 34.9,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      },
+      "referenceRange": [ {
+        "high": {
+          "value": 6.0,
+          "unit": "mmol/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        }
+      } ]
+    },
+    "search": {
+      "mode": "match"
+    }
+  }, {
+    "fullUrl": "https://hapi.fhir.org/baseR4/Observation/102803",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "102803",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2019-11-27T12:39:44.265+00:00",
+        "source": "#DU3tPJwEhtMUE6HA"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "85353-1",
+          "display": "Vital signs, weight, height, head circumference, oxygen saturation and BMI panel"
+        }, {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body mass index (BMI) [Ratio]"
+        } ],
+        "text": "BMI"
+      },
+      "subject": {
+        "reference": "Patient/1203"
+      },
+      "performer": [ {
+        "reference": "Organization/358",
+        "display": "PHARMACIE DU GINKGO"
+      } ],
+      "valueQuantity": {
+        "value": 36.2,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      },
+      "referenceRange": [ {
+        "high": {
+          "value": 7.0,
+          "unit": "mmol/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        }
+      } ]
+    },
+    "search": {
+      "mode": "match"
+    }
+  }, {
+    "fullUrl": "https://hapi.fhir.org/baseR4/Observation/102826",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "102826",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2019-11-27T12:53:31.509+00:00",
+        "source": "#D3ddA0gfQrnBjDEU"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "85353-1",
+          "display": "Vital signs, weight, height, head circumference, oxygen saturation and BMI panel"
+        }, {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body mass index (BMI) [Ratio]"
+        } ],
+        "text": "BMI"
+      },
+      "subject": {
+        "reference": "Patient/1208"
+      },
+      "performer": [ {
+        "reference": "Organization/1621",
+        "display": "CAPE COD HOSPITAL"
+      } ],
+      "valueQuantity": {
+        "value": 11.2,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      },
+      "referenceRange": [ {
+        "high": {
+          "value": 3.0,
+          "unit": "mmol/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        }
+      } ]
+    },
+    "search": {
+      "mode": "match"
+    }
+  }, {
+    "fullUrl": "https://hapi.fhir.org/baseR4/Observation/102839",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "102839",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2019-11-27T12:57:00.190+00:00",
+        "source": "#RZOoI65vGrujugWN"
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "85353-1",
+          "display": "Vital signs, weight, height, head circumference, oxygen saturation and BMI panel"
+        }, {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body mass index (BMI) [Ratio]"
+        } ],
+        "text": "BMI"
+      },
+      "subject": {
+        "reference": "Patient/1316"
+      },
+      "performer": [ {
+        "reference": "Organization/1621",
+        "display": "CAPE COD HOSPITAL"
+      } ],
+      "valueQuantity": {
+        "value": 41.8,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      },
+      "referenceRange": [ {
+        "high": {
+          "value": 8.0,
+          "unit": "mmol/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        }
+      } ]
+    },
+    "search": {
+      "mode": "match"
+    }
+  }, {
+    "fullUrl": "https://hapi.fhir.org/baseR4/Observation/106394",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "106394",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2019-11-28T17:59:42.687+00:00",
+        "source": "#5IZ9WMjYdk7UYN1f"
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body mass index (BMI) [Ratio]"
+        } ]
+      },
+      "effectiveDateTime": "2019-11-25T14:30:00",
+      "valueQuantity": {
+        "value": 34.7,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    },
+    "search": {
+      "mode": "match"
+    }
+  }, {
+    "fullUrl": "https://hapi.fhir.org/baseR4/Observation/598191",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "598191",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2020-02-06T13:54:01.532+00:00",
+        "source": "#EF8l4i0AB5VVT4EV"
+      },
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body Mass Index"
+        } ],
+        "text": "Body Mass Index"
+      },
+      "subject": {
+        "reference": "Patient/597991"
+      },
+      "encounter": {
+        "reference": "Encounter/598187"
+      },
+      "effectiveDateTime": "2017-05-27T15:45:08+02:00",
+      "issued": "2017-05-27T15:45:08.132+02:00",
+      "valueQuantity": {
+        "value": 27.7,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    },
+    "search": {
+      "mode": "match"
+    }
+  }, {
+    "fullUrl": "https://hapi.fhir.org/baseR4/Observation/622925",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "622925",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2020-02-18T09:08:21.927+00:00",
+        "source": "#8t1bINv1FvZfbmgd",
+        "profile": [ "https://www.fhir.philips.com/4.0/StructureDefinition/common/resource/general/observation-v1/ILSObservation" ]
+      },
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body Mass Index"
+        } ],
+        "text": "Body Mass Index"
+      },
+      "subject": {
+        "reference": "Patient/622898"
+      },
+      "encounter": {
+        "reference": "Encounter/622918"
+      },
+      "effectiveDateTime": "2010-04-08T02:35:56+02:00",
+      "issued": "2010-04-08T02:35:56.274+02:00",
+      "valueQuantity": {
+        "value": 27.78,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    },
+    "search": {
+      "mode": "match"
+    }
+  }, {
+    "fullUrl": "https://hapi.fhir.org/baseR4/Observation/622988",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "622988",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2020-02-18T09:08:21.927+00:00",
+        "source": "#8t1bINv1FvZfbmgd",
+        "profile": [ "https://www.fhir.philips.com/4.0/StructureDefinition/common/resource/general/observation-v1/ILSObservation" ]
+      },
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body Mass Index"
+        } ],
+        "text": "Body Mass Index"
+      },
+      "subject": {
+        "reference": "Patient/622898"
+      },
+      "encounter": {
+        "reference": "Encounter/622982"
+      },
+      "effectiveDateTime": "2011-07-21T02:35:56+02:00",
+      "issued": "2011-07-21T02:35:56.274+02:00",
+      "valueQuantity": {
+        "value": 27.78,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    },
+    "search": {
+      "mode": "match"
+    }
+  }, {
+    "fullUrl": "https://hapi.fhir.org/baseR4/Observation/623047",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "623047",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2020-02-18T09:08:21.927+00:00",
+        "source": "#8t1bINv1FvZfbmgd",
+        "profile": [ "https://www.fhir.philips.com/4.0/StructureDefinition/common/resource/general/observation-v1/ILSObservation" ]
+      },
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body Mass Index"
+        } ],
+        "text": "Body Mass Index"
+      },
+      "subject": {
+        "reference": "Patient/622898"
+      },
+      "encounter": {
+        "reference": "Encounter/623043"
+      },
+      "effectiveDateTime": "2011-07-28T02:35:56+02:00",
+      "issued": "2011-07-28T02:35:56.274+02:00",
+      "valueQuantity": {
+        "value": 27.78,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    },
+    "search": {
+      "mode": "match"
+    }
+  }, {
+    "fullUrl": "https://hapi.fhir.org/baseR4/Observation/623084",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "623084",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2020-02-18T09:08:21.927+00:00",
+        "source": "#8t1bINv1FvZfbmgd",
+        "profile": [ "https://www.fhir.philips.com/4.0/StructureDefinition/common/resource/general/observation-v1/ILSObservation" ]
+      },
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body Mass Index"
+        } ],
+        "text": "Body Mass Index"
+      },
+      "subject": {
+        "reference": "Patient/622898"
+      },
+      "encounter": {
+        "reference": "Encounter/623080"
+      },
+      "effectiveDateTime": "2011-08-18T02:35:56+02:00",
+      "issued": "2011-08-18T02:35:56.274+02:00",
+      "valueQuantity": {
+        "value": 27.78,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    },
+    "search": {
+      "mode": "match"
+    }
+  }, {
+    "fullUrl": "https://hapi.fhir.org/baseR4/Observation/623113",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "623113",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2020-02-18T09:08:21.927+00:00",
+        "source": "#8t1bINv1FvZfbmgd",
+        "profile": [ "https://www.fhir.philips.com/4.0/StructureDefinition/common/resource/general/observation-v1/ILSObservation" ]
+      },
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body Mass Index"
+        } ],
+        "text": "Body Mass Index"
+      },
+      "subject": {
+        "reference": "Patient/622898"
+      },
+      "encounter": {
+        "reference": "Encounter/623109"
+      },
+      "effectiveDateTime": "2011-10-20T02:35:56+02:00",
+      "issued": "2011-10-20T02:35:56.274+02:00",
+      "valueQuantity": {
+        "value": 27.78,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    },
+    "search": {
+      "mode": "match"
+    }
+  }, {
+    "fullUrl": "https://hapi.fhir.org/baseR4/Observation/623158",
+    "resource": {
+      "resourceType": "Observation",
+      "id": "623158",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2020-02-18T09:08:21.927+00:00",
+        "source": "#8t1bINv1FvZfbmgd",
+        "profile": [ "https://www.fhir.philips.com/4.0/StructureDefinition/common/resource/general/observation-v1/ILSObservation" ]
+      },
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body Mass Index"
+        } ],
+        "text": "Body Mass Index"
+      },
+      "subject": {
+        "reference": "Patient/622898"
+      },
+      "encounter": {
+        "reference": "Encounter/623154"
+      },
+      "effectiveDateTime": "2012-08-02T02:35:56+02:00",
+      "issued": "2012-08-02T02:35:56.274+02:00",
+      "valueQuantity": {
+        "value": 27.78,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    },
+    "search": {
+      "mode": "match"
+    }
+  } ]
+}

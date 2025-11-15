@@ -1,0 +1,63 @@
+{
+  "resourceType": "DeviceRequest",
+  "id": "1723173",
+  "meta": {
+    "versionId": "2",
+    "lastUpdated": "2025-08-25T22:31:33.622+00:00",
+    "source": "#2ywCa2xwIX8a7qqk"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: HomeO2</p><p><b>meta</b>: </p><p><b>identifier</b>: id: ip_request2</p><p><b>basedOn</b>: <span>Homecare - DM follow-up</span></p><p><b>priorRequest</b>: <span>CGM ambulatory</span></p><p><b>groupIdentifier</b>: id: ip_request1</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>priority</b>: routine</p><p><b>code</b>: <span title=\"Codes: {http://www.ama-assn.org/go/cpt E1392}\">Portable Oxygen Concentrator, Rental</span></p><p><b>subject</b>: <a href=\"Patient-example1.html\">Generated Summary: id: example1; Medical Record Number: 1032702 (USUAL); active; Amy V. Shaw , Amy V. Baxter ; ph: 555-555-5555(HOME); gender: female; birthDate: 1987-02-20</a></p><p><b>encounter</b>: <span>Ambulatory</span></p><p><b>occurrence</b>: Aug 5, 2020, 2:33:27 AM</p><p><b>authoredOn</b>: Aug 5, 2020, 2:33:27 AM</p><p><b>requester</b>: <a href=\"Practitioner-practitioner-1.html\">Dr.Ronald Bone. Generated Summary: id: practitioner-1; id: 9941339108; Ronald Bone </a></p><p><b>reasonCode</b>: <span title=\"Codes: \">COPD</span></p><p><b>reasonReference</b>: <span>COPD</span></p><p><b>supportingInfo</b>: <a href=\"Observation-o2-sat.html\">Previous results. Generated Summary: id: o2-sat; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span>; <span title=\"Codes: {http://loinc.org 59408-5}\">Oxygen saturation in Arterial blood by Pulse oximetry</span>; effective: 2020-07-05; 85 %</a></p><p><b>note</b>: patient is mobile -- needs portable O2 concentrator</p><p><b>relevantHistory</b>: <span>Request for specific device</span></p></div>"
+  },
+  "identifier": [ {
+    "value": "ip_request2"
+  } ],
+  "basedOn": [ {
+    "display": "Homecare - DM follow-up"
+  } ],
+  "priorRequest": [ {
+    "display": "CGM ambulatory"
+  } ],
+  "groupIdentifier": {
+    "value": "ip_request1"
+  },
+  "status": "active",
+  "intent": "order",
+  "priority": "routine",
+  "codeCodeableConcept": {
+    "coding": [ {
+      "system": "http://www.ama-assn.org/go/cpt",
+      "code": "E1392"
+    } ],
+    "text": "Portable Oxygen Concentrator, Rental"
+  },
+  "subject": {
+    "reference": "Patient/1723168"
+  },
+  "encounter": {
+    "display": "Ambulatory"
+  },
+  "occurrenceDateTime": "2020-08-05T09:33:27+07:00",
+  "authoredOn": "2020-08-05T09:33:27+07:00",
+  "requester": {
+    "reference": "Practitioner/1723167",
+    "display": "Dr.Ronald Bone"
+  },
+  "reasonCode": [ {
+    "text": "COPD"
+  } ],
+  "reasonReference": [ {
+    "display": "COPD"
+  } ],
+  "supportingInfo": [ {
+    "reference": "Observation/1723172",
+    "display": "Previous results"
+  } ],
+  "note": [ {
+    "text": "patient is mobile -- needs portable O2 concentrator"
+  } ],
+  "relevantHistory": [ {
+    "display": "Request for specific device"
+  } ]
+}

@@ -1,0 +1,81 @@
+[ {
+  "bmi" : 19.91,
+  "patientId" : "Patient/49006",
+  "observationId" : "49262"
+}, {
+  "bmi" : 20.49,
+  "patientId" : "Patient/49006",
+  "observationId" : "49278"
+}, {
+  "bmi" : 28.0,
+  "patientId" : "Patient/53254",
+  "observationId" : "53248"
+}, {
+  "bmi" : 28.88,
+  "patientId" : null,
+  "observationId" : "66247"
+}, {
+  "bmi" : 28.88,
+  "patientId" : null,
+  "observationId" : "66248"
+}, {
+  "bmi" : 28.88,
+  "patientId" : null,
+  "observationId" : "66249"
+}, {
+  "bmi" : 28.88,
+  "patientId" : null,
+  "observationId" : "66250"
+}, {
+  "bmi" : 16.2,
+  "patientId" : "Patient/1200",
+  "observationId" : "102786"
+}, {
+  "bmi" : 34.9,
+  "patientId" : "Patient/1201",
+  "observationId" : "102791"
+}, {
+  "bmi" : 36.2,
+  "patientId" : "Patient/1203",
+  "observationId" : "102803"
+}, {
+  "bmi" : 11.2,
+  "patientId" : "Patient/1208",
+  "observationId" : "102826"
+}, {
+  "bmi" : 41.8,
+  "patientId" : "Patient/1316",
+  "observationId" : "102839"
+}, {
+  "bmi" : 34.7,
+  "patientId" : null,
+  "observationId" : "106394"
+}, {
+  "bmi" : 27.7,
+  "patientId" : "Patient/597991",
+  "observationId" : "598191"
+}, {
+  "bmi" : 27.78,
+  "patientId" : "Patient/622898",
+  "observationId" : "622925"
+}, {
+  "bmi" : 27.78,
+  "patientId" : "Patient/622898",
+  "observationId" : "622988"
+}, {
+  "bmi" : 27.78,
+  "patientId" : "Patient/622898",
+  "observationId" : "623047"
+}, {
+  "bmi" : 27.78,
+  "patientId" : "Patient/622898",
+  "observationId" : "623084"
+}, {
+  "bmi" : 27.78,
+  "patientId" : "Patient/622898",
+  "observationId" : "623113"
+}, {
+  "bmi" : 27.78,
+  "patientId" : "Patient/622898",
+  "observationId" : "623158"
+} ]

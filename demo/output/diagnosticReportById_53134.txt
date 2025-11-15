@@ -1,0 +1,42 @@
+{
+  "resourceType": "DiagnosticReport",
+  "id": "53134",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2019-11-01T13:49:51.414+00:00",
+    "source": "#C9zzgREWAiqJArSb"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n         <p> \n            <b> Generated Narrative with Details</b> \n         </p> \n         <p> \n            <b> id</b> : example-pgx\n         </p> \n         <p> \n            <b> basedOn</b> : \n            <a> ServiceRequest/example-pgx</a> \n         </p> \n         <p> \n            <b> status</b> : final\n         </p> \n         <p> \n            <b> code</b> : Pharmacogenetics Report \n            <span> (Details : {https://system/PGxReport code 'PGxReport' = 'PGxReport', given as 'Pharmacogenetics\n           Report'})</span> \n         </p> \n         <p> \n            <b> subject</b> : \n            <a> Bob Smith</a> \n         </p> \n         <p> \n            <b> effective</b> : 15/10/2016 12:34:56 PM\n         </p> \n         <p> \n            <b> issued</b> : 20/10/2016 2:00:05 PM\n         </p> \n         <p> \n            <b> performer</b> : \n            <a> Organization/4829</a> \n         </p> \n         <p> \n            <b> result</b> : \n            <a> Observation/example-phenotype</a> \n         </p> \n         <p> \n            <b> presentedForm</b> : \n         </p> \n      </div>"
+  },
+  "status": "final",
+  "code": {
+    "coding": [ {
+      "system": "https://system/PGxReport",
+      "code": "PGxReport",
+      "display": "Pharmacogenetics Report"
+    } ],
+    "text": "Pharmacogenetics Report"
+  },
+  "subject": {
+    "reference": "Patient/1200",
+    "display": "Sridevi Ayyapan"
+  },
+  "effectiveDateTime": "2016-10-15T12:34:56+11:00",
+  "issued": "2016-10-20T14:00:05+11:00",
+  "performer": [ {
+    "reference": "Organization/1621"
+  } ],
+  "result": [ {
+    "reference": "Observation/53133"
+  } ],
+  "presentedForm": [ {
+    "contentType": "application/pdf",
+    "language": "en",
+    "data": "cGRmSW5CYXNlNjRCaW5hcnk=",
+    "hash": "571ef9c5655840f324e679072ed62b1b95eef8a0",
+    "title": "Pharmacogenetics Report",
+    "creation": "2016-10-20T20:00:00+11:00"
+  } ]
+}
