@@ -30,7 +30,7 @@ cd demo
 ./demo.sh
 ```
 ###### Demo Video (Shell View)
-- [Demo Video](https://github.com/conorheffron/hl7-hapi-fhir-obs-api/blob/feat/demo-vid/demo/Screen%20Recording%202025-11-01%20at%2020.35.18.mov)
+- [Demo Video](https://github.com/conorheffron/hl7-hapi-fhir-obs-api/blob/main/demo/Screen%20Recording%202025-11-01%20at%2020.35.18.mov)
 
 ---
 
