@@ -4,6 +4,13 @@
 
 [![Java CI with Maven](https://github.com/conorheffron/hl7-hapi-fhir-obs-api/actions/workflows/maven.yml/badge.svg)](https://github.com/conorheffron/hl7-hapi-fhir-obs-api/actions/workflows/maven.yml)
 
+# Overview
+The `HL7 Application Programming Interface (HAPI) Fast Healthcare Interoperability Resources (FHIR)` is an open-source implementation of the HL7 FHIR standard designed for healthcare interoperability, providing a robust toolkit for developers to create applications that facilitate the exchange of healthcare data.
+- This application uses `Observation` data (BMI) to decide if patients are classed as Obese (where BMI >= 30%).
+- There are several end-points to improve familliarity with the models / Canonicals available for integration & analysis.
+- This tool may assist in requirements gathering & integration design for devs or teams in the Healthcare space.
+- See samples of data returned by this micro service [here](https://github.com/conorheffron/hl7-hapi-fhir-obs-api/tree/feat/demo-vid/demo/output).
+
 ### QUICK START: Build & Run API
 ```shell
 ./mvnw clean package spring-boot:run
@@ -15,13 +22,15 @@
 ```
 ##### Run API with JDK 25 (LTS)
 ```shell
-java -jar target/hl7-hapi-fhir-obs-api-1.3-SNAPSHOT.jar ie.rcsi.example.Application
+java -jar target/hl7-hapi-fhir-obs-api-1.0-RELEASE.jar ie.rcsi.example.Application
 ```
 ##### Run Test Script for Automated Batch of API calls
 ```shell
 cd demo
 ./demo.sh
 ```
+###### Demo Video (Shell View)
+- [Demo Video](https://github.com/conorheffron/hl7-hapi-fhir-obs-api/blob/feat/demo-vid/demo/Screen%20Recording%202025-11-01%20at%2020.35.18.mov)
 
 ---
 
