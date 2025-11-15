@@ -10,14 +10,16 @@ import org.hl7.fhir.r4.model.NutritionOrder;
 import org.hl7.fhir.r4.model.Patient;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
 @Slf4j
+@RestController
+@RequestMapping(value = "/api")
 public class ResourceTypeController {
 
-    @GetMapping(value = "/api/care/plan")
+    @GetMapping(value = "/care/plan")
     public ResponseEntity<String> getCarePlanByResourceId(@RequestParam(name = "resourceId") String resourceId) {
         // Read a care plan with the given ID
         CarePlan carePlan = HapiFhirClient.getInstance().read().resource(CarePlan.class).withId(resourceId).execute();
@@ -27,7 +29,7 @@ public class ResourceTypeController {
                 .body(carePlanStr);
     }
 
-    @GetMapping(value = "/api/device")
+    @GetMapping(value = "/device")
     public ResponseEntity<String> getDeviceByResourceId(@RequestParam(name = "resourceId") String resourceId) {
         // Read a device with the given ID
         Device device = HapiFhirClient.getInstance().read().resource(Device.class).withId(resourceId).execute();
@@ -37,7 +39,7 @@ public class ResourceTypeController {
                 .body(deviceStr);
     }
 
-    @GetMapping(value = "/api/device/request")
+    @GetMapping(value = "/device/request")
     public ResponseEntity<String> getDeviceRequestByResourceId(@RequestParam(name = "resourceId") String resourceId) {
         // Read a device request with the given ID
         DeviceRequest deviceRequest = HapiFhirClient.getInstance().read().resource(DeviceRequest.class).withId(resourceId).execute();
@@ -47,7 +49,7 @@ public class ResourceTypeController {
                 .body(deviceRequestStr);
     }
 
-    @GetMapping(value = "/api/diagnostic/report")
+    @GetMapping(value = "/diagnostic/report")
     public ResponseEntity<String> getDiagnosticReportByResourceId(@RequestParam(name = "resourceId") String resourceId) {
         // Read a patient obj with the given ID
         DiagnosticReport diagnosticReport = HapiFhirClient.getInstance().read().resource(DiagnosticReport.class).withId(resourceId).execute();
@@ -57,7 +59,7 @@ public class ResourceTypeController {
                 .body(diagnosticReportStr);
     }
 
-    @GetMapping(value = "/api/nutrition/order")
+    @GetMapping(value = "/nutrition/order")
     public ResponseEntity<String> getNutritionOrderByResourceId(@RequestParam(name = "resourceId") String resourceId) {
         // Read a patient obj with the given ID
         NutritionOrder nutritionOrder = HapiFhirClient.getInstance().read().resource(NutritionOrder.class).withId(resourceId).execute();
@@ -67,7 +69,7 @@ public class ResourceTypeController {
                 .body(nutritionOrderStr);
     }
 
-    @GetMapping(value = "/api/patient")
+    @GetMapping(value = "/patient")
     public ResponseEntity<String> getPatientByResourceId(@RequestParam(name = "resourceId") String resourceId) {
         // Read a patient obj with the given ID
         Patient patient = HapiFhirClient.getInstance().read().resource(Patient.class).withId(resourceId).execute();
