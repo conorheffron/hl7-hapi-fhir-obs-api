@@ -17,6 +17,7 @@
         <spring.version>3.5.5</spring.version>
         <slf4j.vers>2.0.17</slf4j.vers>
         <hapi.fhir.vers>8.4.0</hapi.fhir.vers>
+        <hapi.fhir.vers>6.7.7</hapi.fhir.vers>
     </properties>
 
     <dependencies>
@@ -44,7 +45,7 @@
         <dependency>
             <groupId>ca.uhn.hapi.fhir</groupId>
             <artifactId>org.hl7.fhir.r4</artifactId>
-            <version>6.7.5</version>
+            <version>${hapi.fhir.vers}</version>
         </dependency>
         <!-- Spring -->
         <dependency>
