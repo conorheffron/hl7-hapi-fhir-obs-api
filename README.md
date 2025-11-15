@@ -19,6 +19,7 @@ java -jar target/hl7-hapi-fhir-obs-api-1.3-SNAPSHOT.jar ie.rcsi.example.Applicat
 ```
 ##### Run Test Script for Automated Batch of API calls
 ```shell
+cd demo
 ./demo.sh
 ```
 
