@@ -3,15 +3,14 @@ package ie.rcsi.example.controller;
 import module java.base;
 
 import ca.uhn.fhir.context.FhirContext;
-import ca.uhn.fhir.model.api.IResource;
 import ca.uhn.fhir.parser.IParser;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import ie.rcsi.example.client.HapiFhirClient;
 import ie.rcsi.example.record.ObservationDetails;
 import lombok.extern.slf4j.Slf4j;
-import org.hl7.fhir.r4.model.Bundle;
-import org.hl7.fhir.r4.model.Observation;
+import org.hl7.fhir.r4b.model.Bundle;
+import org.hl7.fhir.r4b.model.Observation;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -41,7 +40,7 @@ public class ObservationController {
                 .execute();
 
         try {
-            FhirContext ctx = FhirContext.forR4();
+            FhirContext ctx = FhirContext.forR4B();
             IParser jsonParser = ctx.newJsonParser().setPrettyPrint(true);
             String jsonOutput = jsonParser.encodeResourceToString(bundle);
             return ResponseEntity.ok().body(jsonOutput);

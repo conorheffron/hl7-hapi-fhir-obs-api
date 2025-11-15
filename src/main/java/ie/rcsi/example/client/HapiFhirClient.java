@@ -6,7 +6,7 @@ import lombok.Getter;
 
 public final class HapiFhirClient {
 
-    private static final String SERVER_BASE = "http://hapi.fhir.org/baseR4";
+    private static final String SERVER_BASE = "http://hapi.fhir.org/baseR4B";
 
     private static IGenericClient clientInstance;
 
@@ -14,7 +14,7 @@ public final class HapiFhirClient {
 
     // Create a FHIR context for R4
     @Getter
-    private static final FhirContext fhirContext = FhirContext.forR4();
+    private static final FhirContext fhirContext = FhirContext.forR4B();
 
     public static synchronized IGenericClient getInstance() {
         if(clientInstance == null) {

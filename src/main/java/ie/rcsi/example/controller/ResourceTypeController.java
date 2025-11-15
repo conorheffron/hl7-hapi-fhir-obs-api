@@ -2,12 +2,12 @@ package ie.rcsi.example.controller;
 
 import ie.rcsi.example.client.HapiFhirClient;
 import lombok.extern.slf4j.Slf4j;
-import org.hl7.fhir.r4.model.CarePlan;
-import org.hl7.fhir.r4.model.Device;
-import org.hl7.fhir.r4.model.DeviceRequest;
-import org.hl7.fhir.r4.model.DiagnosticReport;
-import org.hl7.fhir.r4.model.NutritionOrder;
-import org.hl7.fhir.r4.model.Patient;
+import org.hl7.fhir.r4b.model.CarePlan;
+import org.hl7.fhir.r4b.model.Device;
+import org.hl7.fhir.r4b.model.DeviceRequest;
+import org.hl7.fhir.r4b.model.DiagnosticReport;
+import org.hl7.fhir.r4b.model.NutritionOrder;
+import org.hl7.fhir.r4b.model.Patient;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
