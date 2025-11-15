@@ -1,0 +1,51 @@
+{
+  "resourceType": "DiagnosticReport",
+  "id": "a81063d6-75c8-4484-ab8f-dd57423d1092",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2020-02-11T18:26:04.083+00:00",
+    "source": "#GrbpEO2AXbSkV309"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\"> Basic Metabolic Panel </div><table class=\"hapiPropertyTable\"><tbody><tr><td>Status</td><td>FINAL</td></tr><tr><td>Issued</td><td> 06 July 2010 17:04:31 </td></tr></tbody></table></div>"
+  },
+  "status": "final",
+  "code": {
+    "coding": [ {
+      "system": "http://loinc.org",
+      "code": "51990-0",
+      "display": "Basic Metabolic Panel"
+    } ]
+  },
+  "subject": {
+    "reference": "urn:uuid:34088dbd-4fb5-4b13-a037-a0b538d04843"
+  },
+  "effectiveDateTime": "2010-07-06T13:04:31-04:00",
+  "issued": "2010-07-06T13:04:31-04:00",
+  "result": [ {
+    "reference": "urn:uuid:848ed5ec-4e42-457f-afa8-a67737294ad9",
+    "display": "Glucose"
+  }, {
+    "reference": "urn:uuid:077d4727-107f-46e5-9847-a28b0e48ce99",
+    "display": "Urea Nitrogen"
+  }, {
+    "reference": "urn:uuid:4b5ccbac-6a48-4d1f-8cd5-940bb5427f95",
+    "display": "Creatinine"
+  }, {
+    "reference": "urn:uuid:d6c03b4c-a421-4395-a127-334d5021b686",
+    "display": "Calcium"
+  }, {
+    "reference": "urn:uuid:032bd59d-af01-45b3-a0a3-3a2fc8fb694c",
+    "display": "Sodium"
+  }, {
+    "reference": "urn:uuid:bc0e2051-42c1-4372-934f-49acd8595c0d",
+    "display": "Potassium"
+  }, {
+    "reference": "urn:uuid:3c3dc917-51f0-49bb-a9eb-9b717e03c189",
+    "display": "Chloride"
+  }, {
+    "reference": "urn:uuid:b8379a6c-19c1-485e-a625-8f2219e186d6",
+    "display": "Carbon Dioxide"
+  } ]
+}

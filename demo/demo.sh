@@ -25,14 +25,14 @@ echo "Running Nutrition Order API call------------------------------------------
 while read -r id; do
   echo "Running Diagnostic Report for resource ID $id"
   curl -X GET -H 'Accept: application/json' "http://localhost:8080/api/nutrition/order?resourceId=$id" | tee "output/nutritionOrderById_$id.txt" | (head -n 5; tail -n 5) &
-done < nutritionOrderResourceIds.txt
+done < input/nutritionOrderResourceIds.txt
 wait
 
 echo "Running Diagnostic Report API calls----------------------------------------------"
 while read -r id; do
   echo "Running Diagnostic Report for resource ID $id"
   curl -X GET -H 'Accept: application/json' "http://localhost:8080/api/diagnostic/report?resourceId=$id" | tee "output/diagnosticReportById_$id.txt" | (head -n 5; tail -n 5) &
-done < diagnosticResourceIds.txt
+done < input/diagnosticResourceIds.txt
 wait
 
 ls -ltr output

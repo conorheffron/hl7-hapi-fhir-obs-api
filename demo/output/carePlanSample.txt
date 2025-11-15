@@ -1,0 +1,148 @@
+{
+  "resourceType": "CarePlan",
+  "id": "1566160",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2020-10-12T12:38:46.348+00:00",
+    "source": "#Kin2Ysu3xbkatyp9"
+  },
+  "identifier": [ {
+    "value": "12345"
+  } ],
+  "instantiatesCanonical": [ "http://example.org/protocol-for-obesity/PlanDefinition" ],
+  "instantiatesUri": [ "http://example.org/protocol-for-obesity" ],
+  "basedOn": [ {
+    "reference": "CarePlan/113854"
+  } ],
+  "replaces": [ {
+    "reference": "CarePlan/113854"
+  } ],
+  "partOf": [ {
+    "reference": "CarePlan/113854"
+  } ],
+  "status": "draft",
+  "intent": "proposal",
+  "category": [ {
+    "coding": [ {
+      "system": "http://loinc.org",
+      "code": "28842-3",
+      "display": "Sphere distance Glasses prescription.lens - left"
+    } ],
+    "text": "sphere, left lens"
+  } ],
+  "title": "<string>",
+  "description": "<string>",
+  "subject": {
+    "reference": "Patient/6bce000f-73a4-415d-971e-753cc484778d",
+    "display": "Roel"
+  },
+  "encounter": {
+    "reference": "Encounter/c95a4972-df9f-4606-944b-a9ac26c6a31e"
+  },
+  "period": {
+    "start": "2013-04-14",
+    "end": "2013-04-21"
+  },
+  "created": "2013-04-14",
+  "author": {
+    "reference": "Patient/113798"
+  },
+  "contributor": [ {
+    "reference": "Device/113805"
+  } ],
+  "careTeam": [ {
+    "reference": "CareTeam/113839"
+  } ],
+  "addresses": [ {
+    "reference": "Condition/113789",
+    "display": "Roel's sepsis"
+  } ],
+  "supportingInfo": [ {
+    "reference": "Encounter/113792"
+  } ],
+  "goal": [ {
+    "reference": "Goal/113853"
+  } ],
+  "activity": [ {
+    "outcomeCodeableConcept": [ {
+      "coding": [ {
+        "system": "http://loinc.org",
+        "code": "28842-3",
+        "display": "Sphere distance Glasses prescription.lens - left"
+      } ],
+      "text": "sphere, left lens"
+    } ],
+    "outcomeReference": [ {
+      "reference": "Encounter/113792"
+    } ],
+    "progress": [ {
+      "text": "Patient indicates they miss the occasional dose"
+    } ],
+    "reference": {
+      "reference": "Appointment/113815"
+    },
+    "detail": {
+      "kind": "Appointment",
+      "instantiatesCanonical": [ "http://example.org/protocol-for-obesity/PlanDefinition" ],
+      "instantiatesUri": [ "http://example.org/protocol-for-obesity" ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "28842-3",
+          "display": "Sphere distance Glasses prescription.lens - left"
+        } ],
+        "text": "sphere, left lens"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "28842-3",
+          "display": "Sphere distance Glasses prescription.lens - left"
+        } ],
+        "text": "sphere, left lens"
+      } ],
+      "reasonReference": [ {
+        "reference": "Condition/113789"
+      } ],
+      "goal": [ {
+        "reference": "Goal/113853"
+      } ],
+      "status": "not-started",
+      "statusReason": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "28842-3",
+          "display": "Sphere distance Glasses prescription.lens - left"
+        } ],
+        "text": "sphere, left lens"
+      },
+      "doNotPerform": true,
+      "scheduledString": "<string>",
+      "location": {
+        "reference": "Location/113788"
+      },
+      "performer": [ {
+        "reference": "Patient/113798"
+      } ],
+      "productReference": {
+        "reference": "Location/113788"
+      },
+      "dailyAmount": {
+        "value": 500,
+        "unit": "mg",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg"
+      },
+      "quantity": {
+        "value": 500,
+        "unit": "mg",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg"
+      },
+      "description": "<string>"
+    }
+  } ],
+  "note": [ {
+    "text": "Patient indicates they miss the occasional dose"
+  } ]
+}
