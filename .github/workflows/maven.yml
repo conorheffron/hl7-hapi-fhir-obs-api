@@ -30,7 +30,29 @@ jobs:
         java-version: '25'
         distribution: 'temurin'
         cache: maven
-    - name: Build with Maven
+        
+    - name: Build & Run Tests with Maven
       run: ./mvnw -B package --file pom.xml
-    - name: Run Bash Script from Demo
-      run: cd demo & chmod +x demo.sh & ./demo.sh
+
+    # Start API in background
+    - name: Start Spring Boot server
+      run: |
+        nohup ./mvnw spring-boot:run > server.log 2>&1 &
+        echo $! > springboot.pid
+        # Wait for server to start (adjust as needed)
+        sleep 37
+        # Optional: check if server is running
+        curl --fail http://localhost:8080/actuator/health || (cat server.log && exit 1)
+
+    # Run your script while server is running
+    - name: Run custom script
+      run: |
+        chmod +x ./demo/demo.sh
+        cd demo
+        ./demo.sh
+
+    # Stop Spring Boot server
+    - name: Stop Spring Boot server
+      run: |
+        kill $(cat springboot.pid) || true
+        rm -f springboot.pid
