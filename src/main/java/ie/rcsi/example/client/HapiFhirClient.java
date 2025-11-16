@@ -11,7 +11,7 @@ public final class HapiFhirClient {
     private HapiFhirClient() { }
 
     @Getter
-    private static final FhirContext fhirContext = FhirContext.forR4();
+    private static final FhirContext fhirContext = FhirContext.forR5();
 
     public static synchronized IGenericClient getInstance(String serverBase) {
         if(clientInstance == null) {

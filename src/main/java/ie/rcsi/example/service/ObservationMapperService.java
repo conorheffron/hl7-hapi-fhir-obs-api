@@ -3,8 +3,8 @@ package ie.rcsi.example.service;
 import ie.rcsi.example.client.HapiFhirClient;
 import ie.rcsi.example.dto.ObservationDetails;
 import lombok.extern.slf4j.Slf4j;
-import org.hl7.fhir.r4.model.Bundle;
-import org.hl7.fhir.r4.model.Observation;
+import org.hl7.fhir.r5.model.Bundle;
+import org.hl7.fhir.r5.model.Observation;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.stereotype.Service;
 
