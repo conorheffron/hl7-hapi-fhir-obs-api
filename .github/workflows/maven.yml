@@ -40,7 +40,7 @@ jobs:
         nohup ./mvnw spring-boot:run > server.log 2>&1 &
         echo $! > springboot.pid
         # Wait for server to start (adjust as needed)
-        sleep 37
+        sleep 9
         # Optional: check if server is running
         curl --fail http://localhost:8080/actuator/health || (cat server.log && exit 1)
 
