@@ -40,12 +40,12 @@ jobs:
         nohup ./mvnw spring-boot:run > server.log 2>&1 &
         echo $! > springboot.pid
         # Wait for server to start (adjust as needed)
-        sleep 9
+        sleep 7
         # Optional: check if server is running
         curl --fail http://localhost:8080/actuator/health || (cat server.log && exit 1)
 
-    # Run your script while server is running
-    - name: Run custom script
+    # Run demo script while server is running
+    - name: Run Demo script to Test API Endpoints
       run: |
         chmod +x ./demo/demo.sh
         cd demo
