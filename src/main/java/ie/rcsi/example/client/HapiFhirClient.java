@@ -6,8 +6,6 @@ import lombok.Getter;
 
 public final class HapiFhirClient {
 
-    private static final String SERVER_BASE = "http://hapi.fhir.org/baseR4";
-
     private static IGenericClient clientInstance;
 
     private HapiFhirClient() { }
@@ -15,16 +13,16 @@ public final class HapiFhirClient {
     @Getter
     private static final FhirContext fhirContext = FhirContext.forR4();
 
-    public static synchronized IGenericClient getInstance() {
+    public static synchronized IGenericClient getInstance(String serverBase) {
         if(clientInstance == null) {
-            clientInstance = createClient();
+            clientInstance = createClient(serverBase);
         }
 
         return clientInstance;
     }
 
-    private static IGenericClient createClient() {
+    private static IGenericClient createClient(String serverBase) {
         // Connect to the public test server
-        return fhirContext.newRestfulGenericClient(SERVER_BASE);
+        return fhirContext.newRestfulGenericClient(serverBase);
     }
 }

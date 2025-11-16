@@ -1,3 +1,9 @@
+ie:
+  rcsi:
+    example:
+      client:
+        base-url: http://hapi.fhir.org/baseR4
+
 spring:
   mvc:
     favicon:
