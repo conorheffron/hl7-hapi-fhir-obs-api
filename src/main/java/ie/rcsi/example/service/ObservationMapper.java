@@ -1,7 +1,7 @@
 package ie.rcsi.example.service;
 
 import ie.rcsi.example.dto.ObservationDetails;
-import org.hl7.fhir.r4.model.Bundle;
+import org.hl7.fhir.r5.model.Bundle;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
