@@ -2,7 +2,7 @@ ie:
   rcsi:
     example:
       client:
-        base-url: http://hapi.fhir.org/baseR4
+        base-url: http://hapi.fhir.org/baseR4B
 
 spring:
   mvc:
