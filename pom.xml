@@ -14,7 +14,7 @@
         <maven.compiler.target>25</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <spring.version>3.5.5</spring.version>
+        <spring.version>3.5.7</spring.version>
         <slf4j.vers>2.0.17</slf4j.vers>
         <hapi.fhir.vers>8.4.0</hapi.fhir.vers>
         <hl7.vers>6.7.7</hl7.vers>
@@ -108,13 +108,13 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
-            <version>6.0.0</version>
+            <version>6.0.1</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.junit.platform</groupId>
             <artifactId>junit-platform-launcher</artifactId>
-            <version>6.0.0</version>
+            <version>6.0.1</version>
             <scope>test</scope>
         </dependency>
         <!-- lombok -->
@@ -133,7 +133,7 @@
         <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-junit-jupiter</artifactId>
-            <version>5.14.1</version>
+            <version>5.20.0</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -146,7 +146,7 @@
         <dependency>
             <groupId>org.assertj</groupId>
             <artifactId>assertj-core</artifactId>
-            <version>3.26.3</version>
+            <version>3.27.6</version>
             <scope>test</scope>
         </dependency>
         <dependency>
