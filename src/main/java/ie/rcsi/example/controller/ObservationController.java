@@ -56,7 +56,7 @@ public class ObservationController {
             log.error("Error while parsing JSON", ex);
             return ResponseEntity
                     .badRequest()
-                    .body("Error: " + ex.getMessage());
+                    .body("An error occurred while processing your request.");
         }
     }
 
@@ -80,7 +80,7 @@ public class ObservationController {
             log.error("Error while parsing JSON", ex);
             return ResponseEntity
                     .badRequest()
-                    .body("Error: " + ex.getMessage());
+                    .body("An error occurred while processing your request.");
         }
     }
 
@@ -104,7 +104,7 @@ public class ObservationController {
             log.error("Error while parsing JSON", ex);
             return ResponseEntity
                     .badRequest()
-                    .body("Error: " + ex.getMessage());
+                    .body("An error occurred while processing your request.");
         }
     }
 }
