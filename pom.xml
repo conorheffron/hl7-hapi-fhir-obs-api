@@ -142,7 +142,6 @@
             <version>5.2.0</version>
             <scope>test</scope>
         </dependency>
-
         <!-- AssertJ (optional if you prefer JUnit assertions) -->
         <dependency>
             <groupId>org.assertj</groupId>
@@ -150,7 +149,6 @@
             <version>3.26.3</version>
             <scope>test</scope>
         </dependency>
-
         <dependency>
             <groupId>net.bytebuddy</groupId>
             <artifactId>byte-buddy</artifactId>
