@@ -14,7 +14,7 @@
         <maven.compiler.target>25</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <spring.version>3.5.5</spring.version>
+        <spring.version>3.5.7</spring.version>
         <slf4j.vers>2.0.17</slf4j.vers>
         <hapi.fhir.vers>8.4.0</hapi.fhir.vers>
         <hl7.vers>6.7.7</hl7.vers>
