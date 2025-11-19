@@ -10,8 +10,8 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 import ie.rcsi.example.service.ClientWrapperService;
 import ie.rcsi.example.service.ObservationMapper;
 import lombok.extern.slf4j.Slf4j;
-import org.hl7.fhir.r4.model.Bundle;
-import org.hl7.fhir.r4.model.Observation;
+import org.hl7.fhir.r4b.model.Bundle;
+import org.hl7.fhir.r4b.model.Observation;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -48,7 +48,7 @@ public class ObservationController {
                 .execute();
 
         try {
-            FhirContext ctx = FhirContext.forR4();
+            FhirContext ctx = FhirContext.forR4B();
             IParser jsonParser = ctx.newJsonParser().setPrettyPrint(true);
             String jsonOutput = jsonParser.encodeResourceToString(bundle);
             return ResponseEntity.ok().body(jsonOutput);
