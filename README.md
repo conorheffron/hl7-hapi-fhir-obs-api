@@ -22,7 +22,7 @@ The `HL7 Application Programming Interface (HAPI) Fast Healthcare Interoperabili
 ```
 ##### Run API with JDK 25 (LTS)
 ```shell
-java -jar target/hl7-hapi-fhir-obs-api-2.0-RELEASE.jar ie.rcsi.example.Application
+java -jar target/hl7-hapi-fhir-obs-api-2.1-RELEASE.jar ie.rcsi.example.Application
 ```
 ##### Run Test Script for Automated Batch of API calls
 ```shell
@@ -78,7 +78,7 @@ curl -X GET -H 'Accept: application/json' 'http://localhost:8080/api/obese/obser
 } ]
 ```
 ### GET Observations by Code (`WHERE` Patients have BMI Observations Recorded)
- - Note: Some Bad / Test data where patient ID/Reference is missing.
+ - _**Note**: Some Bad / Test data where patient ID/Reference is missing._
 ```shell
 curl -X GET -H 'Accept: application/json' 'http://localhost:8080/api/all/observation?code=39156-5'
 ```
