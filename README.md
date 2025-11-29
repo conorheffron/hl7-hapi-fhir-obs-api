@@ -22,7 +22,7 @@ The `HL7 Application Programming Interface (HAPI) Fast Healthcare Interoperabili
 ```
 ##### Run API with JDK 25 (LTS)
 ```shell
-java -jar target/hl7-hapi-fhir-obs-api-2.2-RELEASE.jar ie.rcsi.example.Application
+java -jar target/hl7-hapi-fhir-obs-api-2.3-RELEASE.jar ie.rcsi.example.Application
 ```
 ##### Run Test Script for Automated Batch of API calls
 ```shell
