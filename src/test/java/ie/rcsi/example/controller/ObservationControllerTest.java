@@ -85,7 +85,7 @@ class ObservationControllerTest {
         verify(bundleIQueryMock).execute();
         verify(observationMapperService, never()).mapBundleToObservationDetails(any(Bundle.class), any(Boolean.class));
 
-        assertThat(response.getStatusCodeValue()).isEqualTo(200);
+        assertThat(response.getStatusCode().value()).isEqualTo(200);
         assertThat(response.getBody()).isEqualTo("""
                 {
                   "resourceType": "Bundle",
@@ -143,7 +143,7 @@ class ObservationControllerTest {
         verify(bundleIQueryMock).execute();
         verify(observationMapperService).mapBundleToObservationDetails(any(Bundle.class), any(Boolean.class));
 
-        assertThat(response.getStatusCodeValue()).isEqualTo(200);
+        assertThat(response.getStatusCode().value()).isEqualTo(200);
         assertThat(response.getBody()).isEqualTo("""
                                                                       [ {
                                                                         "bmi" : 41.0,
@@ -182,7 +182,7 @@ class ObservationControllerTest {
         verify(bundleIQueryMock).execute();
         verify(observationMapperService).mapBundleToObservationDetails(any(Bundle.class), any(Boolean.class));
 
-        assertThat(response.getStatusCodeValue()).isEqualTo(200);
+        assertThat(response.getStatusCode().value()).isEqualTo(200);
         assertThat(response.getBody()).isEqualTo("""
                                                           [ {
                                                             "bmi" : 31.0,
