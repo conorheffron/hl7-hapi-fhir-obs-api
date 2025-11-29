@@ -14,7 +14,7 @@
         <maven.compiler.target>25</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <spring.version>3.5.7</spring.version>
+        <spring.version>4.0.0</spring.version>
         <slf4j.vers>2.0.17</slf4j.vers>
         <hapi.fhir.vers>8.6.0</hapi.fhir.vers>
         <hl7.vers>6.7.7</hl7.vers>
@@ -116,6 +116,12 @@
             <artifactId>junit-platform-launcher</artifactId>
             <version>6.0.1</version>
             <scope>test</scope>
+        </dependency>
+        <!-- Jackson -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.20.1</version>
         </dependency>
         <!-- lombok -->
         <dependency>
