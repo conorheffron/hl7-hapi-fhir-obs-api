@@ -58,7 +58,7 @@ public class ResourceTypeController {
 
     @GetMapping(value = "/diagnostic/report")
     public ResponseEntity<String> getDiagnosticReportByResourceId(@RequestParam(name = "resourceId") String resourceId) {
-        // Read a patient obj with the given ID
+        // Read a diagnostic report obj with the given ID
         DiagnosticReport diagnosticReport = clientWrapperService.getClientInstance().read().resource(DiagnosticReport.class).withId(resourceId).execute();
         String diagnosticReportStr = HapiFhirClient.getFhirContext().newJsonParser().setPrettyPrint(true).encodeResourceToString(diagnosticReport);
         log.info("DiagnosticReport: {}", diagnosticReportStr);
@@ -68,7 +68,7 @@ public class ResourceTypeController {
 
     @GetMapping(value = "/nutrition/order")
     public ResponseEntity<String> getNutritionOrderByResourceId(@RequestParam(name = "resourceId") String resourceId) {
-        // Read a patient obj with the given ID
+        // Read a nutrition order obj with the given ID
         NutritionOrder nutritionOrder = clientWrapperService.getClientInstance().read().resource(NutritionOrder.class).withId(resourceId).execute();
         String nutritionOrderStr = HapiFhirClient.getFhirContext().newJsonParser().setPrettyPrint(true).encodeResourceToString(nutritionOrder);
         log.info("Nutrition Order: {}", nutritionOrderStr);

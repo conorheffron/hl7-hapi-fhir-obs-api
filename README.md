@@ -7,8 +7,8 @@
 # Overview
 The `HL7 Application Programming Interface (HAPI) Fast Healthcare Interoperability Resources (FHIR)` is an open-source implementation of the HL7 FHIR standard designed for healthcare interoperability, providing a robust toolkit for developers to create applications that facilitate the exchange of healthcare data.
 - This application uses `Observation` data (BMI) to decide if patients are classed as Obese (where BMI >= 30%).
-- There are several end-points to improve familliarity with the models / Canonicals available for integration & analysis.
-- This tool may assist in requirements gathering & integration design for devs or teams in the Healthcare space.
+- There are several end-points to improve familiarity with the models / Canonicals available for integration and analysis.
+- This tool may help in requirements gathering and integration design for devs or teams in the Healthcare space.
 - See samples of data returned by this micro service [here](https://github.com/conorheffron/hl7-hapi-fhir-obs-api/tree/main/demo/output).
 
 ### QUICK START: Build & Run API
@@ -22,7 +22,7 @@ The `HL7 Application Programming Interface (HAPI) Fast Healthcare Interoperabili
 ```
 ##### Run API with JDK 25 (LTS)
 ```shell
-java -jar target/hl7-hapi-fhir-obs-api-1.2-RELEASE.jar ie.rcsi.example.Application
+java -jar target/hl7-hapi-fhir-obs-api-2.3-RELEASE.jar ie.rcsi.example.Application
 ```
 ##### Run Test Script for Automated Batch of API calls
 ```shell
@@ -78,7 +78,7 @@ curl -X GET -H 'Accept: application/json' 'http://localhost:8080/api/obese/obser
 } ]
 ```
 ### GET Observations by Code (`WHERE` Patients have BMI Observations Recorded)
- - Note: Some Bad / Test data where patient ID/Reference is missing.
+ - _**Note**: Some Bad / Test data where patient ID/Reference is missing._
 ```shell
 curl -X GET -H 'Accept: application/json' 'http://localhost:8080/api/all/observation?code=39156-5'
 ```

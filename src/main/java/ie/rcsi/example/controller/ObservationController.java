@@ -4,6 +4,7 @@ import module java.base;
 
 import ca.uhn.fhir.context.FhirContext;
 import ca.uhn.fhir.parser.IParser;
+import ca.uhn.fhir.rest.gclient.ICriterion;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import ie.rcsi.example.service.ClientWrapperService;
@@ -36,13 +37,14 @@ public class ObservationController {
     }
 
     @GetMapping(value = "/api/observation")
-    public ResponseEntity<String> getObservationResourceTypesByCode(@RequestParam(name = "code") String code) {
+    public ResponseEntity<String> getObservationResourceTypesByCode(@RequestParam(name = "code") String obvTypeCode) {
         // Search Observations with the given code
+        ICriterion<?> searchCriteria = Observation.CODE.exactly().codes(obvTypeCode);
         Bundle bundle = clientWrapperService.getClientInstance()
                 .search()
                 .forResource(Observation.class)
                 .returnBundle(Bundle.class)
-                .where(Observation.CODE.exactly().codes(code))
+                .where(searchCriteria)
                 .execute();
 
         try {
@@ -54,18 +56,19 @@ public class ObservationController {
             log.error("Error while parsing JSON", ex);
             return ResponseEntity
                     .badRequest()
-                    .body("Error: " + ex.getMessage());
+                    .body("An error occurred while processing your request.");
         }
     }
 
     @GetMapping(value = "/api/obese/observation")
     public ResponseEntity<String> getObservationDetailsByCodeWherePatientObese(@RequestParam(name = "code") String obvTypeCode) {
         // Search for Observations (you can filter by patient, code, etc.)
+        ICriterion<?> searchCriteria = Observation.CODE.exactly().codes(obvTypeCode);
         Bundle bundle = clientWrapperService.getClientInstance()
                 .search()
                 .forResource(Observation.class)
                 .returnBundle(Bundle.class)
-                .where(Observation.CODE.exactly().codes(obvTypeCode)) // OBX-5 Segment Data related to Obesity
+                .where(searchCriteria) // OBX-5 Segment Data related to Obesity
                 .execute();
 
         try {
@@ -77,18 +80,19 @@ public class ObservationController {
             log.error("Error while parsing JSON", ex);
             return ResponseEntity
                     .badRequest()
-                    .body("Error: " + ex.getMessage());
+                    .body("An error occurred while processing your request.");
         }
     }
 
     @GetMapping(value = "/api/all/observation")
     public ResponseEntity<String> getAllObservationDetailsByCode(@RequestParam(name = "code") String obvTypeCode) {
         // Search for Observations (you can filter by patient, code, etc.)
+        ICriterion<?> searchCriteria = Observation.CODE.exactly().codes(obvTypeCode);
         Bundle bundle = clientWrapperService.getClientInstance()
                 .search()
                 .forResource(Observation.class)
                 .returnBundle(Bundle.class)
-                .where(Observation.CODE.exactly().codes(obvTypeCode))
+                .where(searchCriteria)
                 .execute();
 
         try {
@@ -100,7 +104,7 @@ public class ObservationController {
             log.error("Error while parsing JSON", ex);
             return ResponseEntity
                     .badRequest()
-                    .body("Error: " + ex.getMessage());
+                    .body("An error occurred while processing your request.");
         }
     }
 }
