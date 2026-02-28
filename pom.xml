@@ -6,7 +6,7 @@
 
     <groupId>ie.rcsi.example</groupId>
     <artifactId>hl7-hapi-fhir-obs-api</artifactId>
-    <version>3.1-RELEASE</version>
+    <version>3.2-RELEASE</version>
 
     <properties>
         <java.version>25</java.version>
@@ -16,7 +16,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <spring.version>4.0.2</spring.version>
         <slf4j.vers>2.0.17</slf4j.vers>
-        <hapi.fhir.vers>8.6.5</hapi.fhir.vers>
+        <hapi.fhir.vers>8.8.0</hapi.fhir.vers>
         <hl7.vers>6.8.0</hl7.vers>
     </properties>
 
