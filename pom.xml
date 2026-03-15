@@ -6,7 +6,7 @@
 
     <groupId>ie.rcsi.example</groupId>
     <artifactId>hl7-hapi-fhir-obs-api</artifactId>
-    <version>3.3-RELEASE</version>
+    <version>3.4-RELEASE</version>
 
     <properties>
         <java.version>25</java.version>
@@ -208,7 +208,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
-                <version>3.4.0</version>
+                <version>3.5.0</version>
             </plugin>
         </plugins>
     </build>
