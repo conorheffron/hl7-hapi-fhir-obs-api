@@ -6,7 +6,7 @@
 
     <groupId>ie.rcsi.example</groupId>
     <artifactId>hl7-hapi-fhir-obs-api</artifactId>
-    <version>3.6-RELEASE</version>
+    <version>3.7-RELEASE</version>
 
     <properties>
         <java.version>25</java.version>
@@ -158,7 +158,7 @@
         <dependency>
             <groupId>net.bytebuddy</groupId>
             <artifactId>byte-buddy</artifactId>
-            <version>1.18.7</version>
+            <version>1.18.8</version>
         </dependency>
     </dependencies>
 
