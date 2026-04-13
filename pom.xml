@@ -17,7 +17,7 @@
         <spring.version>4.0.5</spring.version>
         <slf4j.vers>2.0.17</slf4j.vers>
         <hapi.fhir.vers>8.8.1</hapi.fhir.vers>
-        <hl7.vers>6.9.4</hl7.vers>
+        <hl7.vers>6.9.6</hl7.vers>
     </properties>
 
     <dependencies>
